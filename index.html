@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>KAM</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link rel="icon" href="img/KAM FINAL-1.jpg" type="image/x-icon" />
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border position-relative text-primary" style="width: 6rem; height: 6rem;" role="status"></div>
+        <i class="fa fa-laptop-code fa-2x text-primary position-absolute top-50 start-50 translate-middle"></i>
+    </div>
+    <!-- Spinner End -->
+
+
+   <!-- Topbar Start -->
+<!-- Topbar Start -->
+<div class="container-fluid px-0 wow fadeIn" data-wow-delay="0.1s" style="background-color: #174376; padding-top: 15px; padding-bottom: 15px;">
+    <div class="row gx-0 align-items-center d-none d-lg-flex">
+        <!-- Left: WhatsApp -->
+        <div class="col-lg-6 px-5 text-start">
+            <a href="https://wa.me/+255741193574" target="_blank" class="d-inline-flex align-items-center whatsapp-link" style="color: #ffffff; text-decoration: none;">
+                
+                <span>+255741193574</span>
+            </a>
+        </div>
+
+        <!-- Right: Socials -->
+        <div class="col-lg-6 px-5 text-end">
+            <small style="color: #ffffff;">Follow us:</small>
+            <div class="h-100 d-inline-flex align-items-center">
+                <a class="btn-square text-white border-end border-white rounded-0" href=""><i class="fab fa-facebook-f"></i></a>
+                <a class="btn-square text-white border-end border-white rounded-0" href=""><i class="fab fa-twitter"></i></a>
+                <a class="btn-square text-white border-end border-white rounded-0" href=""><i class="fab fa-linkedin-in"></i></a>
+                <a class="btn-square text-white pe-0" href=""><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Topbar End -->
+
+<!-- Add this to your CSS or inside <style> tags -->
+<style>
+    .whatsapp-logo {
+        animation: pulse 1.5s infinite;
+        transition: transform 0.3s ease;
+        filter: brightness(0) invert(1); /* make WhatsApp icon white */
+    }
+
+    .whatsapp-link:hover .whatsapp-logo {
+        transform: scale(1.2);
+    }
+
+    @keyframes pulse {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.1); }
+        100% { transform: scale(1); }
+    }
+
+    /* Optional: hover effect for social icons */
+    .btn-square:hover {
+        background-color: rgba(255,255,255,0.2);
+    }
+</style>
+
+
+<!-- Brand & Contact Start -->
+<div class="container-fluid py-4 px-5 wow fadeIn" data-wow-delay="0.1s" style="background-color: #1a88ca; color: #ffffff;">
+    <div class="row align-items-center top-bar">
+        <!-- Logo -->
+        <div class="col-lg-4 col-md-12 text-center text-lg-start">
+            <a href="" class="navbar-brand m-0 p-0">
+                <img src="img/kam white (1).png" alt="Logo" style="height: 50px; width: auto; max-width: 100%;">
+            </a>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="col-lg-8 col-md-7 d-none d-lg-block">
+            <div class="row">
+                <!-- Opening Hours -->
+                <div class="col-4">
+                    <div class="d-flex align-items-center justify-content-end text-white">
+                        <div class="flex-shrink-0 btn-lg-square border rounded-circle" style="border-color: #ffffff;">
+                            <i class="far fa-clock" style="color: #ffffff;"></i>
+                        </div>
+                        <div class="ps-3">
+                            <p class="mb-2">Opening Hour</p>
+                            <h6 class="mb-0" style="color: white;">Monday - Saturday, 8:00 AM - 5:00 PM</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Phone -->
+                <div class="col-4">
+                    <div class="d-flex align-items-center justify-content-end text-white">
+                        <div class="flex-shrink-0 btn-lg-square border rounded-circle" style="border-color: #ffffff;">
+                            <i class="fa fa-phone" style="color: #ffffff;"></i>
+                        </div>
+                        <div class="ps-3">
+                            <p class="mb-2">Call Us</p>
+                            <h6 class="mb-0" style="color: white;">+255741193574</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Email -->
+                <div class="col-4">
+                    <div class="d-flex align-items-center justify-content-end text-white">
+                        <div class="flex-shrink-0 btn-lg-square border rounded-circle" style="border-color: #ffffff;">
+                            <i class="far fa-envelope" style="color: #ffffff;"></i>
+                        </div>
+                        <div class="ps-3">
+                            <p class="mb-2">Email Us</p>
+                            <h6 class="mb-0" style="color: white;">kamlimited@gmail.com</h6>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Brand & Contact End -->
+<!-- Brand & Contact End -->
+   <!-- Navbar Start -->
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top py-lg-0 px-lg-5 wow fadeIn"
+     data-wow-delay="0.1s"
+     style="background-color: #f26637;">
+    <a href="#" class="navbar-brand ms-3 d-lg-none" style="font-weight: bold;">KAM</a>
+    <button type="button" class="navbar-toggler me-3" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav me-auto p-3 p-lg-0">
+            <a href="index.html" class="nav-item nav-link active">Home</a>
+            <a href="about.html" class="nav-item nav-link">About Us</a>
+            <a href="service.html" class="nav-item nav-link">Our Products</a>
+            <a href="project.html" class="nav-item nav-link">Projects</a>
+            <div class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">How To Work</a>
+                <div class="dropdown-menu border-0 rounded-0 rounded-bottom m-0">
+                    <a href="health.html" class="dropdown-item">Health, Safety & Environment</a>
+                    <a href="cooperate.html" class="dropdown-item">Corperate Social Responsibility</a>
+                    <a href="quality.html" class="dropdown-item">Quality Assurance</a>
+                    
+                </div>
+            </div>
+           
+            <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+        </div>
+        
+    </div>
+</nav>
+<!-- Navbar End -->
+
+
+<!-- Carousel Start -->
+<div class="container-fluid p-0 mb-5 wow fadeIn" data-wow-delay="0.1s">
+    <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        
+
+        <!-- Carousel Items -->
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+                <img class="w-100" src="img/KAM.jpg" alt="Image">
+            </div>
+
+            <div class="carousel-item">
+                <img class="w-100" src="img/KAM.jpg" alt="Image">
+            </div>
+
+            <div class="carousel-item">
+                <img class="w-100" src="img/KAM.jpg" alt="Image">
+            </div>
+
+            <div class="carousel-item">
+                <img class="w-100" src="img/KAM.jpg" alt="Image">
+            </div>
+
+            <div class="carousel-item">
+                <img class="w-100" src="img/KAM.jpg" alt="Image">
+            </div>
+
+        </div>
+
+        <!-- Navigation Arrows -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#header-carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+<!-- Carousel End -->
+
+
+<style>
+    /* Carousel height */
+#header-carousel,
+#header-carousel .carousel-inner,
+#header-carousel .carousel-item {
+    height: 80vh; /* Set desired height */
+    min-height: 500px; /* prevents shrinking too much */
+}
+
+/* Images cover and zoom effect */
+#header-carousel .carousel-item img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: transform 10s ease; /* slow cinematic zoom */
+}
+
+/* Zoom active slide */
+#header-carousel .carousel-item.active img {
+    transform: scale(1.1);
+}
+
+/* Optional dark overlay for a cinematic feel */
+#header-carousel .carousel-item::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.15);
+}
+
+/* Hide captions completely */
+#header-carousel .carousel-caption {
+    display: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #header-carousel {
+        height: 60vh;
+    }
+}
+</style>
+
+<!-- Welcome Section Start -->
+<div class="container-fluid">
+    <div class="row g-0 align-items-stretch">
+
+        <!-- Left: Image -->
+        <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.1s">
+            <img src="img/worker-in-installing-white-plastic-upvc-window-on-house-photo.jpg" alt="UPVC Company" class="img-fluid full-height">
+        </div>
+
+        <!-- Right: Text -->
+        <div class="col-lg-6 wow fadeInRight d-flex flex-column justify-content-center" data-wow-delay="0.3s">
+            <div class="content-bg h-100">
+
+                <div class="content-inner">
+                    <!-- Heading -->
+                    <h2 style="color: white;">uPVC Windows, Doors and Partition Solutions </h2>
+
+                    <!-- Description -->
+                    <p>
+                        We are a Tanzania-based manufacturer and supplier of uPVC Windows, Doors and Partition 
+Solutions, serving residential, commercial and institutional developments across East and 
+Central Africa. 
+Our products are designed to suit local climatic conditions, modern architectural requirements 
+and the growing demand for secure, long lasting performance, energy-efficient and low
+maintenance building solutions.  
+From high-end luxury homes and hotels to offices, apartments and public buildings, we deliver 
+uPVC systems that combine strength, functionality and refined aesthetics to meet the needs of 
+both luxury developments and everyday residential and commercial projects. 
+Through advanced manufacturing processes, skilled craftsmanship and customer-focused 
+service, we provide uPVC solutions that enhance spaces, improve comfort, and add lasting 
+value. 
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+<!-- Welcome Section End -->
+
+<style>
+    
+
+/* Image */
+.img-fluid.full-height {
+    height: 80vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Background */
+.content-bg {
+    background-color: #1a88ca;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+}
+
+/* Inner spacing */
+.content-inner {
+    padding: 60px;
+    max-width: 640px;
+}
+
+/* GitHub-style typography */
+.content-inner h2 {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 1.7rem;
+    font-weight: 600; /* not too bold */
+    margin-bottom: 20px;
+}
+
+.content-inner p {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 1rem;        /* 16px clean size */
+    line-height: 1.4;       /* proper readability */
+    font-weight: 400;
+    margin-bottom: 16px;
+    opacity: 0.95;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .img-fluid.full-height {
+        height: auto;
+    }
+
+    .content-inner {
+        padding: 40px;
+    }
+
+    .content-inner h2 {
+        font-size: 1.6rem;
+    }
+}
+
+</style>
+
+
+
+ <!-- Feature Start -->
+<section class="feature-section py-5" style="background-color: #f0f0f0;">
+    <div class="container">
+        <div class="row align-items-center g-5">
+
+            <!-- Text Content -->
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                <h2 class="feature-title mb-4" style="color: #174376; font-weight: 600; line-height: 1.3;">
+                    Why People Trust Our UPVC
+                </h2>
+                <p class="feature-description mb-4" style="color: #555; font-size: 1.1rem; line-height: 1.8;">
+                    Our UPVC windows are known for their superior durability, energy efficiency, and low maintenance. Designed to withstand harsh weather conditions, they offer excellent insulation and noise reduction, making your home more comfortable and energy-efficient. With sleek aesthetics and a variety of styles, our UPVC windows combine functionality with modern design.
+                </p>
+
+                <!-- Skills / Progress -->
+                <div class="row g-4">
+                    <div class="col-12">
+                        <div class="skill">
+                            <div class="d-flex justify-content-between mb-1">
+                                <span>Durability & Weather Resistance</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="progress" style="height: 8px; background-color: #ddd;">
+                                <div class="progress-bar bg-primary" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <div class="skill">
+                            <div class="d-flex justify-content-between mb-1">
+                                <span>Energy Efficiency</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="progress" style="height: 8px; background-color: #ddd;">
+                                <div class="progress-bar bg-primary" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <div class="skill">
+                            <div class="d-flex justify-content-between mb-1">
+                                <span>Noise Insulation</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="progress" style="height: 8px; background-color: #ddd;">
+                                <div class="progress-bar bg-primary" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Image Content -->
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="feature-image rounded overflow-hidden shadow-sm">
+                    <img src="partitions.webp" alt="UPVC Installation" class="img-fluid w-100" style="object-fit: cover; height: 100%;">
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Custom CSS -->
+<style>
+.feature-title {
+    font-family: 'Inter', 'Segoe UI', Helvetica, Arial, sans-serif;
+    font-size: 2rem;
+}
+
+.feature-description {
+    font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
+}
+
+.feature-image {
+    min-height: 350px;
+}
+
+@media (max-width: 992px) {
+    .feature-image {
+        min-height: 250px;
+    }
+}
+</style>
+
+<!-- Our Products Start -->
+<section class="products-section py-5" style="background-color: #1a88ca;">
+    <div class="container">
+        <!-- Section Title -->
+        <div class="text-center mb-5">
+            <h2 class="section-title" style="color: #fff; font-weight: 600;">Explore Our UPVC Solutions</h2>
+        </div>
+
+        <!-- Products Grid -->
+        <div class="row g-4">
+            <!-- UPVC Open Window -->
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="card product-card h-100 border-0 shadow-sm">
+                    <div class="card-body text-center d-flex flex-column justify-content-center">
+                        <div class="icon-circle mb-3">
+                            <i class="bi bi-window"></i>
+                        </div>
+                        <h5 class="card-title mt-3" style="font-family: 'Inter', sans-serif; color: #174376;">UPVC  Window</h5>
+                    </div>
+                </div>
+            </div>
+
+            <!-- UPVC Doors & Partitions -->
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                <div class="card product-card h-100 border-0 shadow-sm">
+                    <div class="card-body text-center d-flex flex-column justify-content-center">
+                        <div class="icon-circle mb-3">
+                            <i class="bi bi-door-open"></i>
+                        </div>
+                        <h5 class="card-title mt-3" style="font-family: 'Inter', sans-serif; color: #174376;">UPVC Doors </h5>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Shower Cabinets -->
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="card product-card h-100 border-0 shadow-sm">
+                    <div class="card-body text-center d-flex flex-column justify-content-center">
+                        <div class="icon-circle mb-3">
+                            <i class="bi bi-droplet-half"></i>
+                        </div>
+                        <h5 class="card-title mt-3" style="font-family: 'Inter', sans-serif; color: #174376;">UPVC partitions </h5>
+                    </div>
+                </div>
+            </div>
+
+            <!-- UPVC Slide Window -->
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+                <div class="card product-card h-100 border-0 shadow-sm">
+                    <div class="card-body text-center d-flex flex-column justify-content-center">
+                        <div class="icon-circle mb-3">
+                            <i class="bi bi-arrow-left-right"></i>
+                        </div>
+                        <h5 class="card-title mt-3" style="font-family: 'Inter', sans-serif; color: #174376;">UPVC Ceilling Panel</h5> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Custom CSS -->
+<style>
+.products-section .section-title {
+    font-family: 'Inter', 'Segoe UI', sans-serif;
+    font-size: 2rem;
+}
+
+.product-card {
+    min-height: 350px;
+    font-family: 'Inter', 'Segoe UI', sans-serif;
+    transition: transform 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.icon-circle {
+    width: 100px;
+    height: 100px;
+    background-color: #e0e0e0;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.icon-circle i {
+    font-size: 3rem;
+    color: #174376;
+}
+
+.card-title {
+    margin-top: 15px;
+    color: #174376;
+    font-weight: 500;
+}
+
+@media (max-width: 992px) {
+    .product-card {
+        min-height: 300px;
+    }
+}
+</style>
+
+<!-- Projects Start -->
+<div class="container-xxl py-5" style="background-color: #fff;">
+    <div class="container">
+        <!-- Section Title -->
+        <div class="text-center mb-5">
+            <h1 style="font-family: 'Inter', sans-serif; font-weight: 500; color:#174376">
+                Explore Our Completed UPVC Window Installations
+            </h1>
+        </div>
+
+        <div class="row g-4">
+
+            <!-- Project Item 1 -->
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="project-item rounded shadow-sm overflow-hidden" style="cursor: pointer;">
+                    <img src="partitions.webp" class="img-fluid w-100" style="height: 420px; object-fit: cover; transition: transform 0.5s;">
+                    <div class="project-footer bg-light p-3 text-center" style="font-family: 'Inter', sans-serif; font-weight: 500;">
+                        <strong>Ubungo District</strong> Dar es Salaam, Coast Region<br>
+                        Elegant UPVC Partitions installed for a office.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Item 2 -->
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                <div class="project-item rounded shadow-sm overflow-hidden" style="cursor: pointer;">
+                    <img src="seling.jpg" class="img-fluid w-100" style="height: 420px; object-fit: cover; transition: transform 0.5s;">
+                    <div class="project-footer bg-light p-3 text-center" style="font-family: 'Inter', sans-serif; font-weight: 500;">
+                        <strong>Meru District</strong>, Arusha Region<br>
+                        Modern UPVC Ceilling Panel for a commercial building.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Item 3 -->
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="project-item rounded shadow-sm overflow-hidden" style="cursor: pointer;">
+                    <img src="wind.webp" class="img-fluid w-100" style="height: 420px; object-fit: cover; transition: transform 0.5s;">
+                    <div class="project-footer bg-light p-3 text-center" style="font-family: 'Inter', sans-serif; font-weight: 500;">
+                        <strong>Bariad District</strong>, Mwanza Region<br>
+                        UPVC  windows installed for an office interior.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Item 4 -->
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+                <div class="project-item rounded shadow-sm overflow-hidden" style="cursor: pointer;">
+                    <img src="door.jpg" class="img-fluid w-100" style="height: 420px; object-fit: cover; transition: transform 0.5s;">
+                    <div class="project-footer bg-light p-3 text-center" style="font-family: 'Inter', sans-serif; font-weight: 500;">
+                        <strong>Kyela District</strong>, Mbeya Region<br>
+                        UPVC door installed for a modern residence.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Item 5 -->
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="project-item rounded shadow-sm overflow-hidden" style="cursor: pointer;">
+                    <img src="win.jpeg" class="img-fluid w-100" style="height: 420px; object-fit: cover; transition: transform 0.5s;">
+                    <div class="project-footer bg-light p-3 text-center" style="font-family: 'Inter', sans-serif; font-weight: 500;">
+                        <strong>Moshi</strong>, Kilimanjaro Region<br>
+                        UPVC windows installed for a modern residential project.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Item 6 -->
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+                <div class="project-item rounded shadow-sm overflow-hidden" style="cursor: pointer;">
+                    <img src="part.jpeg" class="img-fluid w-100" style="height: 420px; object-fit: cover; transition: transform 0.5s;">
+                    <div class="project-footer bg-light p-3 text-center" style="font-family: 'Inter', sans-serif; font-weight: 500;">
+                        <strong>Mbeya District</strong>, Mbeya Region<br>
+                        UPVC shower cabinets and windows installed for a home.
+                    </div>
+                </div>
+            </div>
+
+            
+
+        </div>
+    </div>
+</div>
+
+<!-- Hover zoom effect -->
+<style>
+.project-item:hover img {
+    transform: scale(1.1);
+}
+.project-footer {
+    border-top: 1px solid #ccc; /* optional, separates image from footer */
+}
+</style>
+
+
+  <!-- Team Start -->
+<div class="container-fluid py-5" style="background-color: whitesmoke;">
+    <div class="container">
+        <!-- Section Title -->
+        <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+            <h1 class="display-6 mb-4" style="font-family: 'Inter', sans-serif; font-weight: 500; color: #000">
+                We Are A Creative Team For Your Dream House
+            </h1>
+        </div>
+
+        <div class="row g-4">
+            <!-- Team Member 1 -->
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="team-item text-center p-4 border rounded" 
+                     style="background-color: transparent; border: 2px solid #174376; border-radius: 12px; min-height: 350px; transition: transform 0.3s, box-shadow 0.3s;">
+                    <img class="border rounded-circle mb-3" src="img/team.jpeg" alt="Zaward Michael" style="width: 150px; height: 150px; object-fit: cover;">
+                    <div class="team-text text-dark">
+                        <h4 class="mb-1" style="font-weight: 600; color: #000">Zaward Michael</h4>
+                        <p class="mb-2" style="font-size: 1.1rem;  color: #000;">Sales Manager</p>
+                        <div class="team-social mt-3">
+                            <a class="btn btn-sm btn-outline-primary rounded-circle me-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-sm btn-outline-primary rounded-circle me-2" href="#"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-sm btn-outline-primary rounded-circle" href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Team Member 2 -->
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="team-item text-center p-4 border rounded" 
+                     style="background-color: transparent; border: 2px solid #174376; border-radius: 12px; min-height: 350px; transition: transform 0.3s, box-shadow 0.3s;">
+                    <img class="border rounded-circle mb-3" src="img/team.jpeg" alt="Joachim John" style="width: 150px; height: 150px; object-fit: cover;">
+                    <div class="team-text text-dark">
+                        <h4 class="mb-1" style="font-weight: 600; color: #050505">Joachim John</h4>
+                        <p class="mb-2" style="font-size: 1.1rem; color: #050505">Brand Manager</p>
+                        <div class="team-social mt-3">
+                            <a class="btn btn-sm btn-outline-primary rounded-circle me-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-sm btn-outline-primary rounded-circle me-2" href="#"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-sm btn-outline-primary rounded-circle" href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Team Member 3 -->
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="team-item text-center p-4 border rounded" 
+                     style="background-color: transparent; border: 2px solid #174376; border-radius: 12px; min-height: 350px; transition: transform 0.3s, box-shadow 0.3s;">
+                    <img class="border rounded-circle mb-3" src="img/team.jpeg" alt="Shaban Hamis" style="width: 150px; height: 150px; object-fit: cover;">
+                    <div class="team-text text-dark">
+                        <h4 class="mb-1" style="font-weight: 600; color: #1b1b1b">Shaban Hamis</h4>
+                        <p class="mb-2" style="font-size: 1.1rem; color: #161515">Facilitator</p>
+                        <div class="team-social mt-3">
+                            <a class="btn btn-sm btn-outline-primary rounded-circle me-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-sm btn-outline-primary rounded-circle me-2" href="#"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-sm btn-outline-primary rounded-circle" href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Optional Hover Effect -->
+<style>
+.team-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+</style>
+
+<!-- Optional Hover Effect -->
+<style>
+.team-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+</style>
+
+
+
+ <!-- Testimonial Start -->
+<div class="container-fluid py-5" style="background-color: #f0f0f0;">
+    <div class="container">
+        <!-- Section Title -->
+        <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+            <h1 class="display-6 mb-4" style="font-family: 'Inter', sans-serif; font-weight: 500; color: #174376;">What Our Clients Say!</h1>
+        </div>
+
+        <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
+            
+            <!-- Testimonial Item 1 -->
+            <div class="testimonial-item bg-white rounded-3 p-4 shadow-sm" style="transition: transform 0.3s, box-shadow 0.3s;">
+                <div class="d-flex align-items-center mb-3">
+                    <img class="flex-shrink-0 rounded-circle border p-1" src="img/testimonial-1.jpg" alt="" style="width: 70px; height: 70px; object-fit: cover;">
+                    <div class="ms-3">
+                        <h5 class="mb-1" style="font-weight: 600; color: #174376;">Sarah Malik</h5>
+                        <span style="font-size: 0.9rem; color: #555;">Homeowner</span>
+                    </div>
+                </div>
+                <p style="font-size: 1rem; color: #333; line-height: 1.6;">
+                    We replaced all our old windows with UPVC windows from this company, and the difference is incredible. Our home is now quieter, warmer in winter, and cooler in summer. The design looks fantastic and the windows are very easy to maintain. Highly recommended!
+                </p>
+            </div>
+            
+            <!-- Testimonial Item 2 -->
+            <div class="testimonial-item bg-white rounded-3 p-4 shadow-sm" style="transition: transform 0.3s, box-shadow 0.3s;">
+                <div class="d-flex align-items-center mb-3">
+                    <img class="flex-shrink-0 rounded-circle border p-1" src="img/testimonial-2.jpg" alt="" style="width: 70px; height: 70px; object-fit: cover;">
+                    <div class="ms-3">
+                        <h5 class="mb-1" style="font-weight: 600; color: #174376;">Ravi Kumar</h5>
+                        <span style="font-size: 0.9rem; color: #555;">Interior Designer</span>
+                    </div>
+                </div>
+                <p style="font-size: 1rem; color: #333; line-height: 1.6;">
+                    As a designer, I always look for products that combine style with performance. These UPVC windows tick all the boxes — sleek aesthetics, excellent insulation, and zero hassle in terms of upkeep. My clients love them, and so do I!
+                </p>
+            </div>
+            
+            <!-- Testimonial Item 3 -->
+            <div class="testimonial-item bg-white rounded-3 p-4 shadow-sm" style="transition: transform 0.3s, box-shadow 0.3s;">
+                <div class="d-flex align-items-center mb-3">
+                    <img class="flex-shrink-0 rounded-circle border p-1" src="img/testimonial-3.jpg" alt="" style="width: 70px; height: 70px; object-fit: cover;">
+                    <div class="ms-3">
+                        <h5 class="mb-1" style="font-weight: 600; color: #174376;">Neha Sharma</h5>
+                        <span style="font-size: 0.9rem; color: #555;">Apartment Owner</span>
+                    </div>
+                </div>
+                <p style="font-size: 1rem; color: #333; line-height: 1.6;">
+                    These UPVC windows have truly upgraded the comfort level in our apartment. There's a noticeable reduction in outside noise, and our AC usage has gone down. Plus, the installation team was efficient and professional. Thank you!
+                </p>
+            </div>
+            
+            <!-- Testimonial Item 4 -->
+            <div class="testimonial-item bg-white rounded-3 p-4 shadow-sm" style="transition: transform 0.3s, box-shadow 0.3s;">
+                <div class="d-flex align-items-center mb-3">
+                    <img class="flex-shrink-0 rounded-circle border p-1" src="img/testimonial-4.jpg" alt="" style="width: 70px; height: 70px; object-fit: cover;">
+                    <div class="ms-3">
+                        <h5 class="mb-1" style="font-weight: 600; color: #174376;">Mohammed Asif</h5>
+                        <span style="font-size: 0.9rem; color: #555;">Builder & Contractor</span>
+                    </div>
+                </div>
+                <p style="font-size: 1rem; color: #333; line-height: 1.6;">
+                    I’ve worked with many window suppliers, but this company stands out. Their UPVC products are durable, weather-resistant, and install smoothly. For every residential project I handle now, I always recommend their windows first.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- Hover Effect -->
+<style>
+.testimonial-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+}
+.testimonial-carousel .owl-nav {
+    display: none; /* Hide default nav arrows */
+}
+.testimonial-carousel .owl-dots {
+    text-align: center;
+    margin-top: 15px;
+}
+.testimonial-carousel .owl-dot {
+    width: 12px;
+    height: 12px;
+    background-color: #174376;
+    opacity: 0.6;
+    border-radius: 50%;
+    margin: 0 5px;
+    transition: opacity 0.3s;
+}
+.testimonial-carousel .owl-dot.active {
+    opacity: 1;
+}
+</style>
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-body footer  wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Address</h5>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Bagamoyo EPZA Area,P.O.BOX 20653, DAR ES SALAAM,TZ</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+255741193574</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@kambagamoyo@gmail.com</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-square btn-outline-secondary rounded-circle me-1" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square btn-outline-secondary rounded-circle me-1" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-outline-secondary rounded-circle me-1" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-square btn-outline-secondary rounded-circle me-0" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Quick Links</h5>
+                    <a class="btn btn-link" href="about.html">About Us</a>
+                    <a class="btn btn-link" href="contact.html">Contact Us</a>
+                    <a class="btn btn-link" href="service.html">Our Services</a>
+                    <a class="btn btn-link" href="">Terms & Condition</a>
+                    <a class="btn btn-link" href="">Support</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Gallery</h5>
+                    <div class="row g-2">
+                        <div class="col-4">
+                            <img class="img-fluid rounded" src="img/all-you-need-to-know-about-upvc-windows (1).jpg" alt="Image">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid rounded" src="img/UPVC-Window.png" alt="Image">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid rounded" src="img/images (32).jfif.jpg" alt="Image">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid rounded" src="img/images (33).jfif.jpg" alt="Image">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid rounded" src="img/worker-in-installing-white-plastic-upvc-window-on-house-photo.jpg" alt="Image">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid rounded" src="img/Small-Composite-Door-Photo-1024x783.jpg" alt="Image">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                <h5 class="text-light mb-4">Newsletter</h5>
+                <p>Subscribe to our newsletter and stay updated with the latest news, trends, and special offers straight to your inbox.</p>
+                <div class="position-relative mx-auto" style="max-width: 400px;">
+                    <input class="form-control bg-transparent border-secondary w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                    <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">Sign Up</button>
+                </div>
+</div>
+
+            </div>
+        </div>
+        <div class="container-fluid copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a href="#">KMA UPVC WINDOW SYSTEM</a>, All Right Reserved.
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
