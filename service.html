@@ -11,7 +11,7 @@
 
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
-
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -40,6 +40,8 @@
         <i class="fa fa-laptop-code fa-2x text-primary position-absolute top-50 start-50 translate-middle"></i>
     </div>
     <!-- Spinner End -->
+
+
    <!-- Topbar Start -->
 <!-- Topbar Start -->
 <div class="container-fluid px-0 wow fadeIn"
@@ -73,6 +75,7 @@
     </div>
 </div>
 <!-- Topbar End -->
+
 <!-- Add this to your CSS or inside <style> tags -->
 <style>
     .whatsapp-logo {
@@ -154,21 +157,43 @@
         </div>
     </div>
 </div>
-
+<!-- Brand & Contact End -->
+<!-- Brand & Contact End -->
    <!-- Navbar Start -->
 <nav class="navbar navbar-expand-lg navbar-dark sticky-top py-lg-0 px-lg-5 wow fadeIn"
      data-wow-delay="0.1s"
      style="background-color: #f26637;">
-    <a href="#" class="navbar-brand ms-3 d-lg-none" style="font-weight: bold;">KAM</a>
+    <a href="#" class="navbar-brand ms-3 d-lg-none" style="font-weight: bold;"></a>
     <button type="button" class="navbar-toggler me-3" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarCollapse">
         <div class="navbar-nav me-auto p-3 p-lg-0">
-            <a href="index.html" class="nav-item nav-link">Home</a>
-            <a href="about.html" class="nav-item nav-link">About Us</a>
-            <a href="service.html" class="nav-item nav-link active">Our Products</a>
-            <a href="project.html" class="nav-item nav-link">Projects</a>
+            <a href="index.html" class="nav-item nav-link active">Home</a>
+          
+            <div class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">About Us</a>
+                <div class="dropdown-menu border-0 rounded-0 rounded-bottom m-0">
+                    <a href="about.html" class="dropdown-item">Who are we ?</a>
+                    <a href="vision.html" class="dropdown-item">Visions & missions</a>
+                    <a href="core-value.html" class="dropdown-item">Core Values</a>
+                    <a href="locations.html" class="dropdown-item">Location</a>
+                    
+                </div>
+            </div>
+            
+            <div class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Our Products</a>
+                <div class="dropdown-menu border-0 rounded-0 rounded-bottom m-0">
+                    <a href="upvc-window.html" class="dropdown-item">UPVC Windows</a>
+                    <a href="upvc-doors.html" class="dropdown-item">UPVC Doors</a>
+                    <a href="upvc-partitions.html" class="dropdown-item">UPVC Partitions</a>
+                    <a href="upvc-ceiling-panel.html" class="dropdown-item">UPVC Ceiling Panels</a>
+                    
+                </div>
+            </div>
+            
+            
             <div class="nav-item dropdown">
                 <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">How To Work</a>
                 <div class="dropdown-menu border-0 rounded-0 rounded-bottom m-0">
@@ -178,9 +203,12 @@
                     
                 </div>
             </div>
+            
+           <a href="project.html" class="nav-item nav-link">Projects</a>
+           <a href="our-services.html" class="nav-item nav-link">Our Services</a>
             <a href="contact.html" class="nav-item nav-link">Contact Us</a>
         </div>
-         
+        
     </div>
 </nav>
 <!-- Navbar End -->
@@ -455,57 +483,63 @@
 
 
 
-
 <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-body footer  wow fadeIn" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <div class="row g-5">
-                <div class="col-lg-3 col-md-6">
-                    <h5 class="text-light mb-4">Address</h5>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Bagamoyo EPZA Area,P.O.BOX 20653, DAR ES SALAAM,TZ</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+255741193574</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@kambagamoyo@gmail.com</p>
-                    <div class="d-flex pt-2">
-                        <a class="btn btn-square btn-outline-secondary rounded-circle me-1" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-square btn-outline-secondary rounded-circle me-1" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-square btn-outline-secondary rounded-circle me-1" href=""><i class="fab fa-youtube"></i></a>
-                        <a class="btn btn-square btn-outline-secondary rounded-circle me-0" href=""><i class="fab fa-linkedin-in"></i></a>
-                    </div>
+<div class="container-fluid footer" style="background:#1a88bc; color:white;">
+    <div class="container py-5">
+        <div class="row g-5">
+
+            <!-- Address -->
+            <div class="col-lg-3 col-md-6">
+                <h5 class="mb-4">Address</h5>
+                <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Bagamoyo EPZA Area, P.O.BOX 20653, DAR ES SALAAM, TZ</p>
+                <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+255741193574</p>
+                <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@kambagamoyo@gmail.com</p>
+                <div class="d-flex pt-2">
+                    <a class="btn btn-square rounded-circle me-1 text-white border-white" href="#"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-square rounded-circle me-1 text-white border-white" href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-square rounded-circle me-1 text-white border-white" href="#"><i class="fab fa-youtube"></i></a>
+                    <a class="btn btn-square rounded-circle me-0 text-white border-white" href="#"><i class="fab fa-linkedin-in"></i></a>
                 </div>
-                <div class="col-lg-3 col-md-6">
-                    <h5 class="text-light mb-4">Quick Links</h5>
-                    <a class="btn btn-link" href="about.html">About Us</a>
-                    <a class="btn btn-link" href="contact.html">Contact Us</a>
-                    <a class="btn btn-link" href="service.html">Our Services</a>
-                    <a class="btn btn-link" href="">Terms & Condition</a>
-                    <a class="btn btn-link" href="">Support</a>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    
-                </div>
-                <div class="col-lg-3 col-md-6">
-                <h5 class="text-light mb-4">Newsletter</h5>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="col-lg-3 col-md-6">
+                <h5 class="mb-4">Quick Links</h5>
+                <a class="d-block text-white text-decoration-none mb-2" href="about.html">About Us</a>
+                <a class="d-block text-white text-decoration-none mb-2" href="contact.html">Contact Us</a>
+                <a class="d-block text-white text-decoration-none mb-2" href="service.html">Our Services</a>
+                <a class="d-block text-white text-decoration-none mb-2" href="#">Terms & Condition</a>
+                <a class="d-block text-white text-decoration-none" href="#">Support</a>
+            </div>
+
+            <!-- Empty Column -->
+            <div class="col-lg-3 col-md-6"></div>
+
+            <!-- Newsletter -->
+            <div class="col-lg-3 col-md-6">
+                <h5 class="mb-4">Newsletter</h5>
                 <p>Subscribe to our newsletter and stay updated with the latest news, trends, and special offers straight to your inbox.</p>
                 <div class="position-relative mx-auto" style="max-width: 400px;">
-                    <input class="form-control bg-transparent border-secondary w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
-                    <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">Sign Up</button>
+                    <input class="form-control bg-transparent border-white text-white w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                    <button type="button" class="btn btn-light py-2 position-absolute top-0 end-0 mt-2 me-2 text-primary">Sign Up</button>
                 </div>
-</div>
-
             </div>
+
         </div>
-        <div class="container-fluid copyright">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a href="#">KMA UPVC WINDOW SYSTEM</a>, All Right Reserved.
-                    </div>
-                    
+    </div>
+
+    <!-- Copyright -->
+    <div class="container-fluid" style="background:#1673a1; color:white;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start py-2">
+                    &copy; <a href="#" class="text-white text-decoration-none">KMA UPVC WINDOW SYSTEM</a>, All Rights Reserved.
                 </div>
             </div>
         </div>
     </div>
-    <!-- Footer End -->
+</div>
+<!-- Footer End -->
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
