@@ -3,14 +3,15 @@
 
 <head>
     <meta charset="utf-8">
-    <title>DGcom - Web Design Agency HTML Template</title>
+    <title>KAM</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link rel="icon" href="img/KAM FINAL-1.jpg" type="image/x-icon" />
     <meta content="" name="keywords">
     <meta content="" name="description">
 
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
-
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -41,300 +42,378 @@
     <!-- Spinner End -->
 
 
-    <!-- Topbar Start -->
-    <div class="container-fluid bg-light px-0 wow fadeIn" data-wow-delay="0.1s">
-        <div class="row gx-0 align-items-center d-none d-lg-flex">
-            <div class="col-lg-6 px-5 text-start">
-                <ol class="breadcrumb mb-0">
-                    <li class="breadcrumb-item"><a class="small text-secondary" href="#">Home</a></li>
-                    <li class="breadcrumb-item"><a class="small text-secondary" href="#">Career</a></li>
-                    <li class="breadcrumb-item"><a class="small text-secondary" href="#">Terms</a></li>
-                    <li class="breadcrumb-item"><a class="small text-secondary" href="#">Privacy</a></li>
-                </ol>
+   <!-- Topbar Start -->
+<!-- Topbar Start -->
+<div class="container-fluid px-0 wow fadeIn"
+     data-wow-delay="0.1s"
+     style="background-color:#174376;padding:10px 0;">
+
+    <div class="row gx-0 align-items-center d-flex flex-column flex-md-row text-center text-md-start">
+
+        <!-- WhatsApp -->
+        <div class="col-12 col-md-6 px-3 px-md-5 mb-2 mb-md-0">
+            <a href="https://wa.me/+255741193574"
+               target="_blank"
+               class="d-inline-flex align-items-center"
+               style="color:#fff;text-decoration:none;">
+               +255741193574
+            </a>
+        </div>
+
+        <!-- Social -->
+        <div class="col-12 col-md-6 px-3 px-md-5 text-md-end">
+            <small style="color:#fff;">Follow us:</small>
+
+            <div class="d-inline-flex align-items-center">
+                <a class="text-white px-2 border-end border-white" href="#"><i class="fab fa-facebook-f"></i></a>
+                <a class="text-white px-2 border-end border-white" href="#"><i class="fab fa-twitter"></i></a>
+                <a class="text-white px-2 border-end border-white" href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a class="text-white px-2" href="#"><i class="fab fa-instagram"></i></a>
             </div>
-            <div class="col-lg-6 px-5 text-end">
-                <small>Follow us:</small>
-                <div class="h-100 d-inline-flex align-items-center">
-                    <a class="btn-square text-primary border-end rounded-0" href=""><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn-square text-primary border-end rounded-0" href=""><i class="fab fa-twitter"></i></a>
-                    <a class="btn-square text-primary border-end rounded-0" href=""><i class="fab fa-linkedin-in"></i></a>
-                    <a class="btn-square text-primary pe-0" href=""><i class="fab fa-instagram"></i></a>
+        </div>
+
+    </div>
+</div>
+<!-- Topbar End -->
+
+<!-- Add this to your CSS or inside <style> tags -->
+<style>
+    .whatsapp-logo {
+        animation: pulse 1.5s infinite;
+        transition: transform 0.3s ease;
+        filter: brightness(0) invert(1); /* make WhatsApp icon white */
+    }
+
+    .whatsapp-link:hover .whatsapp-logo {
+        transform: scale(1.2);
+    }
+
+    @keyframes pulse {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.1); }
+        100% { transform: scale(1); }
+    }
+
+    /* Optional: hover effect for social icons */
+    .btn-square:hover {
+        background-color: rgba(255,255,255,0.2);
+    }
+</style>
+
+
+<!-- Brand & Contact Start -->
+<div class="container-fluid py-4 px-5 wow fadeIn" data-wow-delay="0.1s" style="background-color: #1a88ca; color: #ffffff;">
+    <div class="row align-items-center top-bar">
+        <!-- Logo -->
+        <div class="col-lg-4 col-md-12 text-center text-lg-start">
+            <a href="" class="navbar-brand m-0 p-0">
+                <img src="img/kam white (1).png" alt="Logo" style="height: 50px; width: auto; max-width: 100%;">
+            </a>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="col-lg-8 col-md-7 d-none d-lg-block">
+            <div class="row">
+                <!-- Opening Hours -->
+                <div class="col-4">
+                    <div class="d-flex align-items-center justify-content-end text-white">
+                        <div class="flex-shrink-0 btn-lg-square border rounded-circle" style="border-color: #ffffff;">
+                            <i class="far fa-clock" style="color: #ffffff;"></i>
+                        </div>
+                        <div class="ps-3">
+                            <p class="mb-2">Opening Hour</p>
+                            <h6 class="mb-0" style="color: white;">Monday - Saturday, 8:00 AM - 5:00 PM</h6>
+                        </div>
+                    </div>
                 </div>
+
+                <!-- Phone -->
+                <div class="col-4">
+                    <div class="d-flex align-items-center justify-content-end text-white">
+                        <div class="flex-shrink-0 btn-lg-square border rounded-circle" style="border-color: #ffffff;">
+                            <i class="fa fa-phone" style="color: #ffffff;"></i>
+                        </div>
+                        <div class="ps-3">
+                            <p class="mb-2">Call Us</p>
+                            <h6 class="mb-0" style="color: white;">+255741193574</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Email -->
+                <div class="col-4">
+                    <div class="d-flex align-items-center justify-content-end text-white">
+                        <div class="flex-shrink-0 btn-lg-square border rounded-circle" style="border-color: #ffffff;">
+                            <i class="far fa-envelope" style="color: #ffffff;"></i>
+                        </div>
+                        <div class="ps-3">
+                            <p class="mb-2">Email Us</p>
+                            <h6 class="mb-0" style="color: white;">kamlimited@gmail.com</h6>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
-    <!-- Topbar End -->
-
-
-    <!-- Brand & Contact Start -->
-    <div class="container-fluid py-4 px-5 wow fadeIn" data-wow-delay="0.1s">
-        <div class="row align-items-center top-bar">
-            <div class="col-lg-4 col-md-12 text-center text-lg-start">
-                <a href="" class="navbar-brand m-0 p-0">
-                    <h1 class="fw-bold text-primary m-0"><i class="fa fa-laptop-code me-3"></i>DGcom</h1>
-                    <!-- <img src="img/logo.png" alt="Logo"> -->
-                </a>
-            </div>
-            <div class="col-lg-8 col-md-7 d-none d-lg-block">
-                <div class="row">
-                    <div class="col-4">
-                        <div class="d-flex align-items-center justify-content-end">
-                            <div class="flex-shrink-0 btn-lg-square border rounded-circle">
-                                <i class="far fa-clock text-primary"></i>
-                            </div>
-                            <div class="ps-3">
-                                <p class="mb-2">Opening Hour</p>
-                                <h6 class="mb-0">Mon - Fri, 8:00 - 9:00</h6>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="d-flex align-items-center justify-content-end">
-                            <div class="flex-shrink-0 btn-lg-square border rounded-circle">
-                                <i class="fa fa-phone text-primary"></i>
-                            </div>
-                            <div class="ps-3">
-                                <p class="mb-2">Call Us</p>
-                                <h6 class="mb-0">+012 345 6789</h6>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="d-flex align-items-center justify-content-end">
-                            <div class="flex-shrink-0 btn-lg-square border rounded-circle">
-                                <i class="far fa-envelope text-primary"></i>
-                            </div>
-                            <div class="ps-3">
-                                <p class="mb-2">Email Us</p>
-                                <h6 class="mb-0">info@example.com</h6>
-                            </div>
-                        </div>
-                    </div>
+</div>
+<!-- Brand & Contact End -->
+<!-- Brand & Contact End -->
+   <!-- Navbar Start -->
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top py-lg-0 px-lg-5 wow fadeIn"
+     data-wow-delay="0.1s"
+     style="background-color: #f26637;">
+    <a href="#" class="navbar-brand ms-3 d-lg-none" style="font-weight: bold;"></a>
+    <button type="button" class="navbar-toggler me-3" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav me-auto p-3 p-lg-0">
+            <a href="index.html" class="nav-item nav-link active">Home</a>
+          
+            <div class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">About Us</a>
+                <div class="dropdown-menu border-0 rounded-0 rounded-bottom m-0">
+                    <a href="about.html" class="dropdown-item">Who are we ?</a>
+                    <a href="vision.html" class="dropdown-item">Visions & missions</a>
+                    <a href="core-value.html" class="dropdown-item">Core Values</a>
+                    <a href="locations.html" class="dropdown-item">Location</a>
+                    
                 </div>
             </div>
+            
+            <div class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Our Products</a>
+                <div class="dropdown-menu border-0 rounded-0 rounded-bottom m-0">
+                    <a href="upvc-window.html" class="dropdown-item">UPVC Windows</a>
+                    <a href="upvc-doors.html" class="dropdown-item">UPVC Doors</a>
+                    <a href="upvc-partitions.html" class="dropdown-item">UPVC Partitions</a>
+                    <a href="upvc-ceiling-panel.html" class="dropdown-item">UPVC Ceiling Panels</a>
+                    
+                </div>
+            </div>
+            
+            
+            <div class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">How To Work</a>
+                <div class="dropdown-menu border-0 rounded-0 rounded-bottom m-0">
+                    <a href="health.html" class="dropdown-item">Health, Safety & Environment</a>
+                    <a href="cooperate.html" class="dropdown-item">Corperate Social Responsibility</a>
+                    <a href="quality.html" class="dropdown-item">Quality Assurance</a>
+                    
+                </div>
+            </div>
+            
+           
+            <div class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Why Kam</a>
+                <div class="dropdown-menu border-0 rounded-0 rounded-bottom m-0">
+                    <a href="feature.html" class="dropdown-item">Features & Benefits</a>
+                    <a href="design.html" class="dropdown-item">Designs & Styles</a>
+                    <a href="qualitiesandinnovations.html" class="dropdown-item">Quality & innovations</a>
+                    <a href="Testimonial.html" class="dropdown-item">Testimonials</a>
+                    
+                </div>
+            </div>
+            <a href="project.html" class="nav-item nav-link">Projects</a>
+            <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+            <a href="blog.html" class="nav-item nav-link">Blog</a>
+            
         </div>
+        
     </div>
-    <!-- Brand & Contact End -->
-
-
-    <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-primary navbar-dark sticky-top py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
-        <a href="#" class="navbar-brand ms-3 d-lg-none">MENU</a>
-        <button type="button" class="navbar-toggler me-3" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav me-auto p-3 p-lg-0">
-                <a href="index.html" class="nav-item nav-link">Home</a>
-                <a href="about.html" class="nav-item nav-link">About Us</a>
-                <a href="service.html" class="nav-item nav-link">Services</a>
-                <a href="project.html" class="nav-item nav-link">Projects</a>
-                <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Pages</a>
-                    <div class="dropdown-menu border-0 rounded-0 rounded-bottom m-0">
-                        <a href="feature.html" class="dropdown-item active">Features</a>
-                        <a href="team.html" class="dropdown-item">Our Team</a>
-                        <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                        <a href="404.html" class="dropdown-item">404 Page</a>
-                    </div>
-                </div>
-                <a href="contact.html" class="nav-item nav-link">Contact Us</a>
-            </div>
-            <a href="#" class="btn btn-sm btn-light rounded-pill py-2 px-4 d-none d-lg-block">Get Started</a>
-        </div>
-    </nav>
-    <!-- Navbar End -->
+</nav>
+<!-- Navbar End -->
 
 
     <!-- Page Header Start -->
     <div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container text-center py-5">
-            <h1 class="display-4 text-white animated slideInDown mb-3">Features</h1>
-            <nav aria-label="breadcrumb animated slideInDown">
-                <ol class="breadcrumb justify-content-center mb-0">
-                    <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
-                    <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
-                    <li class="breadcrumb-item text-primary active" aria-current="page">Features</li>
-                </ol>
-            </nav>
+            <h1 class="display-4 text-white animated slideInDown mb-3">Features & Benefits</h1>
+            
         </div>
     </div>
     <!-- Page Header End -->
 
 
-    <!-- Facts Start -->
-    <div class="container-xxl py-5">
+<!-- Features & Benefits Section - KAM Limited Style -->
+<section class="kam-features-section py-5">
+  <div class="container">
+    <!-- Section Header -->
+    <div class="row align-items-center mb-5">
+      <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+        <h2 class="main-title" style="color:#174376;">Features & Benefits</h2>
+        <p class="section-desc">
+          At KAM Limited, our uPVC windows and doors are designed to enhance energy efficiency, reduce noise, resist rain and storms, and improve your home’s security, while providing complete design freedom.
+        </p>
+      </div>
+      <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
+        <img src="img/banne3.jpeg" alt="KAM Features" class="img-fluid rounded">
+      </div>
+    </div>
+
+    <!-- Features Icons Only -->
+    <div class="row g-4">
+      <div class="col-md-4 text-center" data-aos="fade-up" data-aos-delay="100">
+        <i class="fas fa-solar-panel feature-icon"></i>
+        <h5>Energy Efficient</h5>
+        <p>Reduce your energy bills with airtight sealing and multi-layered insulation.</p>
+      </div>
+
+      <div class="col-md-4 text-center" data-aos="fade-up" data-aos-delay="150">
+        <i class="fas fa-volume-mute feature-icon"></i>
+        <h5>Noise Insulation</h5>
+        <p>Enjoy a quieter home with multi-chambered profiles and sound-insulated glass.</p>
+      </div>
+
+      <div class="col-md-4 text-center" data-aos="fade-up" data-aos-delay="200">
+        <i class="fas fa-cloud-rain feature-icon"></i>
+        <h5>Rainwater Resistant</h5>
+        <p>Keep interiors dry with robust water-tight design and drainage.</p>
+      </div>
+
+      <div class="col-md-4 text-center" data-aos="fade-up" data-aos-delay="250">
+        <i class="fas fa-shield-alt feature-icon"></i>
+        <h5>Storm Resistant</h5>
+        <p>Withstand storms up to 250 km/h with reinforced profiles.</p>
+      </div>
+
+      <div class="col-md-4 text-center" data-aos="fade-up" data-aos-delay="300">
+        <i class="fas fa-tools feature-icon"></i>
+        <h5>Low Maintenance</h5>
+        <p>Easy to clean, durable, and long-lasting uPVC profiles.</p>
+      </div>
+
+      <div class="col-md-4 text-center" data-aos="fade-up" data-aos-delay="350">
+        <i class="fas fa-shield-virus feature-icon"></i>
+        <h5>Keeps Insects Out</h5>
+        <p>Enjoy protection from insects with tight-fitting screens and seals.</p>
+      </div>
+
+      <div class="col-md-4 text-center" data-aos="fade-up" data-aos-delay="400">
+        <i class="fas fa-sun feature-icon"></i>
+        <h5>Large Openings & Sunlight</h5>
+        <p>Maximize natural light with wide frames and clear glass.</p>
+      </div>
+
+      <div class="col-md-4 text-center" data-aos="fade-up" data-aos-delay="450">
+        <i class="fas fa-leaf feature-icon"></i>
+        <h5>Reduce Air Conditioning Costs</h5>
+        <p>Energy-efficient design reduces the need for AC usage.</p>
+      </div>
+
+      <div class="col-md-4 text-center" data-aos="fade-up" data-aos-delay="500">
+        <i class="fas fa-pencil-ruler feature-icon"></i>
+        <h5>Complete Design Freedom</h5>
+        <p>Customize sizes, colors, and styles to match your vision.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+.kam-features-section .section-desc {
+    color:#666;
+    font-size:1.05rem;
+    line-height:1.6;
+}
+
+.feature-icon {
+    font-size:3rem;
+    color:#f26637;
+    margin-bottom:15px;
+    display:block;
+}
+
+.kam-features-section h5 {
+    font-weight:700;
+    color:#174376;
+    margin-bottom:10px;
+}
+
+.kam-features-section p {
+    font-size:0.95rem;
+    color:#666;
+}
+
+@media(max-width:768px){
+    .kam-features-section .feature-icon {
+        font-size:2.5rem;
+    }
+}
+</style>
+
+
+   <!-- Footer Start -->
+<div class="container-fluid footer" style="background:#1a88bc; color:white;">
+    <div class="container py-5">
+        <div class="row g-5">
+
+            <!-- Address -->
+            <div class="col-lg-3 col-md-6">
+                <h5 class="mb-4" style="color: white;">Address</h5>
+                <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Bagamoyo EPZA Area, P.O.BOX 20653, DAR ES SALAAM, TZ</p>
+                <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+255741193574</p>
+                <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@kambagamoyo@gmail.com</p>
+                <div class="d-flex pt-2">
+                    <a class="btn btn-square rounded-circle me-1 text-white border-white" href="#"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-square rounded-circle me-1 text-white border-white" href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-square rounded-circle me-1 text-white border-white" href="#"><i class="fab fa-youtube"></i></a>
+                    <a class="btn btn-square rounded-circle me-0 text-white border-white" href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="col-lg-3 col-md-6">
+                <h5 class="mb-4" style="color: white;">Quick Links</h5>
+                <a class="d-block text-white text-decoration-none mb-2" href="about.html">About Us</a>
+                <a class="d-block text-white text-decoration-none mb-2" href="contact.html">Contact Us</a>
+                <a class="d-block text-white text-decoration-none mb-2" href="service.html">Our Services</a>
+                <a class="d-block text-white text-decoration-none mb-2" href="#">Terms & Condition</a>
+                <a class="d-block text-white text-decoration-none" href="#">Support</a>
+            </div>
+
+            <!-- Empty Column -->
+            <div class="col-lg-3 col-md-6"></div>
+
+            <!-- Newsletter -->
+            <div class="col-lg-3 col-md-6">
+                <h5 class="mb-4" style="color: white;">Newsletter</h5>
+                <p>Subscribe to our newsletter and stay updated with the latest news, trends, and special offers straight to your inbox.</p>
+                <div class="position-relative mx-auto" style="max-width: 400px;">
+                    <input class="form-control bg-transparent border-white text-white w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                    <button type="button" class="btn btn-light py-2 position-absolute top-0 end-0 mt-2 me-2 text-primary">Sign Up</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="container-fluid" style="background:#1673a1; color:white;">
         <div class="container">
-            <div class="row g-4">
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="fact-item bg-light rounded text-center h-100 p-5">
-                        <i class="fa fa-certificate fa-4x text-primary mb-4"></i>
-                        <h5 class="mb-3">Years Experience</h5>
-                        <h1 class="display-5 mb-0" data-toggle="counter-up">1234</h1>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="fact-item bg-light rounded text-center h-100 p-5">
-                        <i class="fa fa-users-cog fa-4x text-primary mb-4"></i>
-                        <h5 class="mb-3">Team Members</h5>
-                        <h1 class="display-5 mb-0" data-toggle="counter-up">1234</h1>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="fact-item bg-light rounded text-center h-100 p-5">
-                        <i class="fa fa-users fa-4x text-primary mb-4"></i>
-                        <h5 class="mb-3">Satisfied Clients</h5>
-                        <h1 class="display-5 mb-0" data-toggle="counter-up">1234</h1>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
-                    <div class="fact-item bg-light rounded text-center h-100 p-5">
-                        <i class="fa fa-check fa-4x text-primary mb-4"></i>
-                        <h5 class="mb-3">Projects Done</h5>
-                        <h1 class="display-5 mb-0" data-toggle="counter-up">1234</h1>
-                    </div>
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start py-2">
+                    &copy; <a href="#" class="text-white text-decoration-none">KMA UPVC WINDOW SYSTEM</a>, All Rights Reserved.
                 </div>
             </div>
         </div>
     </div>
-    <!-- Facts End -->
-
-
-    <!-- Feature Start -->
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="row g-5">
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="h-100">
-                        <h6 class="section-title bg-white text-start text-primary pe-3">Why Choose Us</h6>
-                        <h1 class="display-6 mb-4">Why People Trust Us? Learn About Us!</h1>
-                        <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
-                        <div class="row g-4">
-                            <div class="col-12">
-                                <div class="skill">
-                                    <div class="d-flex justify-content-between">
-                                        <p class="mb-2">Digital Marketing</p>
-                                        <p class="mb-2">85%</p>
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="skill">
-                                    <div class="d-flex justify-content-between">
-                                        <p class="mb-2">SEO & Backlinks</p>
-                                        <p class="mb-2">90%</p>
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="skill">
-                                    <div class="d-flex justify-content-between">
-                                        <p class="mb-2">Design & Development</p>
-                                        <p class="mb-2">95%</p>
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="img-border">
-                        <img class="img-fluid" src="img/feature.jpg" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Feature End -->
-
-
-    <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-body footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <div class="row g-5">
-                <div class="col-lg-3 col-md-6">
-                    <h5 class="text-light mb-4">Address</h5>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
-                    <div class="d-flex pt-2">
-                        <a class="btn btn-square btn-outline-secondary rounded-circle me-1" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-square btn-outline-secondary rounded-circle me-1" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-square btn-outline-secondary rounded-circle me-1" href=""><i class="fab fa-youtube"></i></a>
-                        <a class="btn btn-square btn-outline-secondary rounded-circle me-0" href=""><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h5 class="text-light mb-4">Quick Links</h5>
-                    <a class="btn btn-link" href="">About Us</a>
-                    <a class="btn btn-link" href="">Contact Us</a>
-                    <a class="btn btn-link" href="">Our Services</a>
-                    <a class="btn btn-link" href="">Terms & Condition</a>
-                    <a class="btn btn-link" href="">Support</a>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h5 class="text-light mb-4">Gallery</h5>
-                    <div class="row g-2">
-                        <div class="col-4">
-                            <img class="img-fluid rounded" src="img/project-1.jpg" alt="Image">
-                        </div>
-                        <div class="col-4">
-                            <img class="img-fluid rounded" src="img/project-2.jpg" alt="Image">
-                        </div>
-                        <div class="col-4">
-                            <img class="img-fluid rounded" src="img/project-3.jpg" alt="Image">
-                        </div>
-                        <div class="col-4">
-                            <img class="img-fluid rounded" src="img/project-4.jpg" alt="Image">
-                        </div>
-                        <div class="col-4">
-                            <img class="img-fluid rounded" src="img/project-5.jpg" alt="Image">
-                        </div>
-                        <div class="col-4">
-                            <img class="img-fluid rounded" src="img/project-6.jpg" alt="Image">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h5 class="text-light mb-4">Newsletter</h5>
-                    <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
-                    <div class="position-relative mx-auto" style="max-width: 400px;">
-                        <input class="form-control bg-transparent border-secondary w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
-                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container-fluid copyright">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a href="#">Your Site Name</a>, All Right Reserved.
-                    </div>
-                    <div class="col-md-6 text-center text-md-end">
-                        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                        Designed By <a href="https://htmlcodex.com">HTML Codex</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Footer End -->
+</div>
+<!-- Footer End -->
 
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
 
-
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    once: true, // animation happens only once when scrolling down
+    duration: 800, // default duration of animations
+    easing: 'ease-in-out', // smooth easing
+  });
+</script>
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>

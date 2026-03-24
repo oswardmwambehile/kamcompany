@@ -204,8 +204,18 @@
                 </div>
             </div>
             
-           <a href="project.html" class="nav-item nav-link">Projects</a>
-           <a href="our-services.html" class="nav-item nav-link">Our Services</a>
+           
+            <div class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Why Kam</a>
+                <div class="dropdown-menu border-0 rounded-0 rounded-bottom m-0">
+                    <a href="feature.html" class="dropdown-item">Features & Benefits</a>
+                    <a href="design.html" class="dropdown-item">Designs & Styles</a>
+                    <a href="qualitiesandinnovations.html" class="dropdown-item">Quality & innovations</a>
+                    <a href="Testimonial.html" class="dropdown-item">Testimonials</a>
+                    
+                </div>
+            </div>
+            <a href="project.html" class="nav-item nav-link">Projects</a>
             <a href="contact.html" class="nav-item nav-link">Contact Us</a>
             <a href="blog.html" class="nav-item nav-link">Blog</a>
             
@@ -330,7 +340,7 @@ object-fit:contain;   /* important */
      data-aos="zoom-in" 
      data-aos-delay="400" 
      data-aos-duration="800">
-    <img src="img/banne3.jpeg" alt="UPVC Company" class="img-fluid card-img">
+    <img src="img/jamila.jpg.jpeg" alt="UPVC Company" class="img-fluid card-img">
 </div>
 
       </div>
@@ -439,78 +449,82 @@ object-fit:contain;   /* important */
   new WOW().init();
 </script>
 
-
 <section class="products-section py-5">
-  <div class="container-fluid px-3 px-lg-4">
+  <div class="container">
 
     <!-- TEXT ON TOP -->
-    <div class="row mb-5 ">
-      <div class="col-12" data-aos="fade-up" data-aos-delay="200">
-        <h6 class="small-title">OUR PRODUCTS</h6>
-        <h2 class="main-title">
-          We Offers Various Quality Products.
-        </h2>
-        <p class="product-desc">
-          Our state of the art factory uses modern technology and equipment to manufacture high quality uPVC products tailored to our customers’ specifications and requirements.
-        </p>
-        
+    <div class="row mb-5">
+      <div class="col-lg-8">
+
+        <div class="text-wrapper" data-aos="fade-up" data-aos-delay="200">
+          
+          <h2 class="main-title">
+            We Offers Various Quality Products.
+          </h2>
+          <p class="product-desc">
+            Our state of the art factory uses modern technology and equipment to manufacture high quality uPVC products tailored to our customers’ specifications and requirements.
+          </p>
+        </div>
+
       </div>
     </div>
 
-    <!-- PRODUCTS IN ONE ROW -->
-    <div class="row">
+    <!-- PRODUCTS GRID WITH ANIMATIONS -->
+    <div class="row g-4">
 
-     <div class="col-12 d-flex flex-wrap justify-content-center gap-5">
-
-        <!-- PRODUCT 1 -->
-        <a href="upvc-window.html" class="product-card wow fadeInLeft" data-wow-delay="0.4s">
+      <div class="col-lg-3 col-md-6" data-aos="fade-left" data-aos-delay="100">
+        <a href="upvc-window.html" class="product-card">
           <div class="product-img">
             <img src="img/banne1.png" alt="UPVC Windows">
           </div>
           <h5>UPVC Windows</h5>
           <p>Durable and energy-efficient windows designed for modern homes.</p>
         </a>
+      </div>
 
-        <!-- PRODUCT 2 -->
-        <a href="upvc-doors.html" class="product-card wow fadeInDown" data-wow-delay="0.4s">
+      <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+        <a href="upvc-doors.html" class="product-card">
           <div class="product-img">
             <img src="door.jpg" alt="UPVC Doors">
           </div>
           <h5>UPVC Doors</h5>
           <p>Strong stylish doors providing security and modern appearance.</p>
         </a>
+      </div>
 
-        <!-- PRODUCT 3 -->
-        <a href="upvc-partitions.html" class="product-card wow fadeInUp" data-wow-delay="0.4s">
+      <div class="col-lg-3 col-md-6" data-aos="fade-down" data-aos-delay="300">
+        <a href="upvc-partitions.html" class="product-card">
           <div class="product-img">
             <img src="UPVC-Office-Partition. (1).jpg" alt="UPVC Partitions">
           </div>
           <h5>UPVC Partitions</h5>
           <p>Modern partition systems ideal for offices and interiors.</p>
         </a>
+      </div>
 
-        <!-- PRODUCT 4 -->
-        <a href="upvc-ceiling-panel.html" class="product-card wow fadeInRight" data-wow-delay="0.4s">
+      <div class="col-lg-3 col-md-6" data-aos="fade-right" data-aos-delay="400">
+        <a href="upvc-ceiling-panel.html" class="product-card">
           <div class="product-img">
             <img src="img/ceil1.jpeg" alt="UPVC Ceiling Panels">
           </div>
           <h5>UPVC Ceiling Panels</h5>
           <p>Moisture resistant ceiling panels for stylish interior finishing.</p>
         </a>
-
       </div>
 
     </div>
-
   </div>
 </section>
 
 <style>
-.products-section {
+  .products-section {
   background: white;
 }
 
-/* TEXT */
+.text-wrapper {
+  max-width: 700px;
+}
+
 .small-title {
   color: #1a88ca;
   font-weight: 600;
@@ -526,23 +540,19 @@ object-fit:contain;   /* important */
 .product-desc {
   color: #555;
   line-height: 1.8;
-  font-size: 18px; /* ✅ Increased font */
-  max-width: 700px;
-  
+  font-size: 18px;
 }
-
-
 
 /* CARD */
 .product-card {
+  display: block;
   background: #1a88bc;
   border-radius: 10px;
   text-align: center;
-  max-width: 300px;
-  flex: 1 1 250px;
   text-decoration: none;
   color: white;
-  
+  padding: 10px;
+  height: 100%;
   transition: 0.35s;
 }
 
@@ -588,28 +598,22 @@ object-fit:contain;   /* important */
   .main-title {
     font-size: 1.9rem;
   }
-
-  .product-card {
-    flex: 1 1 100%;
-    max-width: 100%;
-  }
 }
-</style>
+  </style>
 
 
 
 
 <!-- WHY WE ARE THE BEST -->
 <section class="py-5" style="background:white">
-  <div class="container">
+  <div class="container-fluid">
 
     <!-- TOP TITLE -->
-    <div class="mb-5">
-   
+    <div class="mb-5 text-center">
       <h2 class="main-title" style="color:#174376; font-weight:600;">
         Reasons Why We Are The Best
       </h2>
-      <p style="color:#666; max-width:700px;">
+      <p style="color:#666; max-width:700px; margin:0 auto;">
         Our UPVC products are designed to provide comfort, durability, and long-lasting performance in all conditions.
       </p>
     </div>
@@ -617,7 +621,7 @@ object-fit:contain;   /* important */
     <!-- SMALL CARDS -->
     <div class="row g-4 text-center mb-5">
 
-      <div class="col-6 col-md-4 col-lg-2  wow fadeInLeft" data-wow-delay="0.1s" data-wow-duration="0.8s">
+      <div class="col-12 col-md-4 col-lg-2 wow fadeInLeft" data-wow-delay="0.1s" data-wow-duration="0.8s">
         <div class="reason-card">
           <i class="bi bi-shield-check"></i>
           <h6>Durability</h6>
@@ -625,7 +629,7 @@ object-fit:contain;   /* important */
         </div>
       </div>
 
-      <div class="col-6 col-md-4 col-lg-2  wow fadeInLeft" data-wow-delay="0.3s" data-wow-duration="0.8s">
+      <div class="col-12 col-md-4 col-lg-2 wow fadeInLeft" data-wow-delay="0.3s" data-wow-duration="0.8s">
         <div class="reason-card">
           <i class="bi bi-volume-mute"></i>
           <h6>Noise Insulation</h6>
@@ -633,7 +637,7 @@ object-fit:contain;   /* important */
         </div>
       </div>
 
-      <div class="col-6 col-md-4 col-lg-2  wow fadeInUp" data-wow-delay="0.4s" data-wow-duration="0.8s">
+      <div class="col-12 col-md-4 col-lg-2 wow fadeInUp" data-wow-delay="0.4s" data-wow-duration="0.8s">
         <div class="reason-card">
           <i class="bi bi-cloud-rain"></i>
           <h6>Rain Protection</h6>
@@ -641,7 +645,7 @@ object-fit:contain;   /* important */
         </div>
       </div>
 
-      <div class="col-6 col-md-4 col-lg-2  wow fadeInRight" data-wow-delay="0.5s" data-wow-duration="0.8s">
+      <div class="col-12 col-md-4 col-lg-2 wow fadeInRight" data-wow-delay="0.5s" data-wow-duration="0.8s">
         <div class="reason-card">
           <i class="bi bi-cloud-sun"></i>
           <h6>Weather Resistant</h6>
@@ -649,7 +653,7 @@ object-fit:contain;   /* important */
         </div>
       </div>
 
-      <div class="col-6 col-md-4 col-lg-2  wow fadeInUp" data-wow-delay="0.6s" data-wow-duration="0.8s">
+      <div class="col-12 col-md-4 col-lg-2 wow fadeInUp" data-wow-delay="0.6s" data-wow-duration="0.8s">
         <div class="reason-card">
           <i class="bi bi-wind"></i>
           <h6>Dust Protection</h6>
@@ -657,11 +661,7 @@ object-fit:contain;   /* important */
         </div>
       </div>
 
-      
-
-      
-
-      <div class="col-6 col-md-4 col-lg-2  wow fadeInRight" data-wow-delay="0.7s" data-wow-duration="0.8s">
+      <div class="col-12 col-md-4 col-lg-2 wow fadeInRight" data-wow-delay="0.7s" data-wow-duration="0.8s">
         <div class="reason-card">
           <i class="bi bi-cloud-lightning"></i>
           <h6>Storm Resistant</h6>
@@ -726,7 +726,6 @@ object-fit:contain;   /* important */
     }
 }
 </style>
-
 
 
 
@@ -928,8 +927,552 @@ const projectsSwiper = new Swiper('.projects-swiper', {
 });
 </script>
 
+<!-- Call To Action Banner with Left Image -->
+<section class="cta-section py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- Left Image -->
+      <div class="col-lg-6 mb-4 mb-lg-0" data-aos="zoom-in" data-aos-delay="200">
+        <img src="img/banne1.png" alt="uPVC Quote" class="cta-img rounded">
+      </div>
+
+      <!-- Right Text with Contact Info -->
+<div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
+    <h2>Get Your Free Quote Today!</h2>
+    <p>Contact us now for a custom solution tailored to your home or office. Our team will guide you through everything from selection to installation.</p>
+
+    <!-- Contact Info -->
+    <div class="cta-contacts mb-3">
+        <p><i class="fas fa-phone-alt"></i> <a href="tel:+255741193574">+255 741 193 574</a></p>
+        <p><i class="fas fa-envelope"></i> <a href="mailto:kamlimited@gmail.com">kamlimited@gmail.com</a></p>
+        <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/+255741193574" target="_blank">Chat on WhatsApp</a></p>
+    </div>
+
+    <!-- Contact Button -->
+    <a href="contact.html" class="btn-cta">Contact Us</a>
+</div>
+    </div>
+  </div>
+</section>
+
+<style>
+.cta-contacts p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.cta-contacts i {
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+
+/* Links inside contact info */
+.cta-contacts a {
+    color: #fff;
+    text-decoration: underline;
+    transition: 0.3s;
+}
+
+.cta-contacts a:hover {
+    color: #0f2c55;
+    text-decoration: none;
+}
+
+.cta-section {
+    background: #f26637;
+    color: #fff;
+    
+   
+    transition: 0.3s;
+}
+.cta-section h2 {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+    color: #fff;
+}
+.cta-section p {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+    color: #fff;
+}
+.btn-cta {
+    background: #174376;
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+.btn-cta:hover {
+    background: #0f2c55;
+}
+
+/* IMAGE */
+.cta-img {
+    width: 100%;
+    height: 100%;
+    min-height: 300px;  /* minimum height for mobile */
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* RESPONSIVE */
+@media(max-width:992px){
+    .cta-section {
+        text-align: center;
+    }
+    .cta-img {
+        min-height: 400px; /* taller on mobile so image looks good */
+        margin-bottom: 20px;
+    }
+    .cta-section h2 {
+        font-size: 1.8rem;
+    }
+    .cta-section p {
+        font-size: 1rem;
+    }
+}
+</style>
+
+<!-- Counter / Stats Section with Responsive Cards -->
+<section class="counter-section py-5" data-aos="fade-up" data-aos-delay="200" style="background:white;">
+  <div class="container">
+    <h2 class="mb-5 text-center" data-aos="fade-down" data-aos-delay="100">Our Achievements</h2>
+    <div class="row g-4 justify-content-center">
+
+      <!-- Counter 1 -->
+      <div class="col-12 col-sm-6 col-md-3" data-aos="fade-up" data-aos-delay="100">
+        <div class="counter-card">
+          <div class="icon-circle"><i class="fas fa-window-maximize"></i></div>
+          <h2 class="counter" data-target="1500">0</h2>
+          <p>Windows Installed</p>
+        </div>
+      </div>
+
+      <!-- Counter 2 -->
+      <div class="col-12 col-sm-6 col-md-3" data-aos="fade-up" data-aos-delay="200">
+        <div class="counter-card">
+          <div class="icon-circle"><i class="fas fa-door-closed"></i></div>
+          <h2 class="counter" data-target="1200">0</h2>
+          <p>Doors Sold</p>
+        </div>
+      </div>
+
+      <!-- Counter 3 -->
+      <div class="col-12 col-sm-6 col-md-3" data-aos="fade-up" data-aos-delay="300">
+        <div class="counter-card">
+          <div class="icon-circle"><i class="fas fa-th-large"></i></div>
+          <h2 class="counter" data-target="500">0</h2>
+          <p>Partitions Installed</p>
+        </div>
+      </div>
+
+      <!-- Counter 4 -->
+      <div class="col-12 col-sm-6 col-md-3" data-aos="fade-up" data-aos-delay="400">
+        <div class="counter-card">
+          <div class="icon-circle"><i class="fas fa-columns"></i></div>
+          <h2 class="counter" data-target="200">0</h2>
+          <p>Ceiling Panels Installed</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style>
+/* Counter Card */
+.counter-card {
+    background: transparent;
+    border: 2px solid #1a88bc;
+    padding: 30px 15px;
+    border-radius: 15px;
+    transition: 0.4s;
+    overflow: hidden;
+    text-align: center;
+}
+
+/* Hover effect */
+.counter-card:hover {
+    transform: translateY(-10px);
+    border-color: #f26637;
+}
+
+/* Icon Circle */
+.icon-circle {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #1a88bc, #1a88ca);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px;
+    color: #fff;
+    font-size: 30px;
+    transition: 0.3s;
+}
+.counter-card:hover .icon-circle {
+    background: linear-gradient(135deg, #f26637, #ff7f50);
+    transform: scale(1.1);
+}
+
+/* Counter Number */
+.counter-card h2.counter {
+    font-size: 2.5rem;
+    color: #174376;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+/* Counter Text */
+.counter-card p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .counter-card h2.counter { font-size: 2rem; }
+    .icon-circle { width: 60px; height: 60px; font-size: 25px; }
+}
+</style>
+
+<script>
+const counters = document.querySelectorAll('.counter');
+counters.forEach(counter => {
+  counter.innerText = '0';
+  const updateCounter = () => {
+    const target = +counter.getAttribute('data-target');
+    const c = +counter.innerText;
+    const increment = target / 200;
+    if(c < target){
+      counter.innerText = `${Math.ceil(c + increment)}`;
+      setTimeout(updateCounter, 20);
+    } else{
+      counter.innerText = target;
+    }
+  };
+  updateCounter();
+});
+</script>
 
 
+<!-- FAQ Section -->
+<section class="faq-section py-5" data-aos="fade-up" data-aos-delay="200" style="background:white;">
+  <div class="container">
+    <!-- Section Header -->
+    <div class=" mb-5">
+      <h2 class="main-title" style="color:#174376; font-weight:500;">Frequently Asked Questions</h2>
+      <p style="color:#666; max-width:700px;">Answers to common questions about our uPVC products and services.</p>
+    </div>
+
+    <!-- Accordion -->
+    <div class="accordion" id="faqAccordion">
+      <!-- FAQ 1 -->
+      <div class="accordion-item shadow-sm rounded mb-3" data-aos="fade-up" data-aos-delay="100">
+        <h2 class="accordion-header" id="faq1">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1">
+            <i class="fas fa-window-maximize me-2"></i> How do I maintain my uPVC windows?
+          </button>
+        </h2>
+        <div id="collapse1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Clean with a soft cloth and mild detergent, lubricate hinges annually, and avoid harsh chemicals.
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ 2 -->
+      <div class="accordion-item shadow-sm rounded mb-3" data-aos="fade-up" data-aos-delay="150">
+        <h2 class="accordion-header" id="faq2">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2">
+            <i class="fas fa-shield-alt me-2"></i> What is the warranty period?
+          </button>
+        </h2>
+        <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            All products come with a 5-year warranty covering manufacturing defects.
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ 3 -->
+      <div class="accordion-item shadow-sm rounded mb-3" data-aos="fade-up" data-aos-delay="200">
+        <h2 class="accordion-header" id="faq3">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3">
+            <i class="fas fa-truck me-2"></i> Can you install uPVC doors and windows at my location?
+          </button>
+        </h2>
+        <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Yes, we provide installation services across Dar es Salaam and other regions in Tanzania.
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ 4 -->
+      <div class="accordion-item shadow-sm rounded mb-3" data-aos="fade-up" data-aos-delay="250">
+        <h2 class="accordion-header" id="faq4">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4">
+            <i class="fas fa-cogs me-2"></i> Are your products energy-efficient?
+          </button>
+        </h2>
+        <div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Yes, all uPVC windows and doors are designed to reduce heat transfer, improving energy efficiency.
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ 5 -->
+      <div class="accordion-item shadow-sm rounded mb-3" data-aos="fade-up" data-aos-delay="300">
+        <h2 class="accordion-header" id="faq5">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5">
+            <i class="fas fa-paint-roller me-2"></i> Can I customize the colors and finishes?
+          </button>
+        </h2>
+        <div id="collapse5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Absolutely! We offer a range of colors and finishes to match your design preferences.
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ 6 -->
+      <div class="accordion-item shadow-sm rounded mb-3" data-aos="fade-up" data-aos-delay="350">
+        <h2 class="accordion-header" id="faq6">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6">
+            <i class="fas fa-tools me-2"></i> How long does installation take?
+          </button>
+        </h2>
+        <div id="collapse6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Installation typically takes 1-3 days depending on the project size and number of units.
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ 7 -->
+      <div class="accordion-item shadow-sm rounded mb-3" data-aos="fade-up" data-aos-delay="400">
+        <h2 class="accordion-header" id="faq7">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7">
+            <i class="fas fa-money-bill-wave me-2"></i> What payment methods do you accept?
+          </button>
+        </h2>
+        <div id="collapse7" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            We accept bank transfers, mobile money, and cash payments. Contact us for invoicing details.
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ 8 -->
+      <div class="accordion-item shadow-sm rounded mb-3" data-aos="fade-up" data-aos-delay="450">
+        <h2 class="accordion-header" id="faq8">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse8">
+            <i class="fas fa-question-circle me-2"></i> Do you offer after-sales support?
+          </button>
+        </h2>
+        <div id="collapse8" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Yes, we provide maintenance, repair, and technical support for all installed products.
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ 9 -->
+      <div class="accordion-item shadow-sm rounded mb-3" data-aos="fade-up" data-aos-delay="500">
+        <h2 class="accordion-header" id="faq9">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse9">
+            <i class="fas fa-info-circle me-2"></i> How do I get a quote?
+          </button>
+        </h2>
+        <div id="collapse9" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            You can get a free quote by contacting us via phone, email, or our contact form. We will guide you step-by-step.
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style>
+.faq-section {
+  background: #f8f9fa;
+}
+.faq-section .accordion-item {
+  border: 2px solid #1a88ca;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.4s;
+}
+.faq-section .accordion-item:not(:last-child) {
+  margin-bottom: 15px;
+}
+.faq-section .accordion-button {
+  background: #fff;
+  color: #174376;
+  font-weight: 600;
+  font-size: 1rem;
+  border: none;
+}
+.faq-section .accordion-button.collapsed {
+  background: #f9fbfd;
+}
+.faq-section .accordion-button:not(.collapsed) {
+  background: #1a88ca;
+  color: #fff;
+}
+.faq-section .accordion-button:focus {
+  box-shadow: none;
+}
+.faq-section .accordion-body {
+  background: #ffffff;
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+.faq-section i {
+  color: #f26637;
+}
+</style>
+
+
+<!-- Blog / News Section -->
+<section class="blog-section py-5" data-aos="fade-up" data-aos-delay="200">
+  <div class="container">
+    <div class="mb-5 text-center">
+      <h2 class="main-title" style="color:#174376;">Latest News & Updates</h2>
+      <p style="color:#666; max-width:700px; margin:auto;">
+        Check out our latest articles and tips about uPVC products, installations, and maintenance.
+      </p>
+    </div>
+
+    <div class="row g-4">
+      <!-- Left Big Blog -->
+      <div class="col-12 col-lg-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="blog-card featured-blog h-100">
+          <img src="img/jamila.jpg.jpeg" alt="Featured Blog" class="img-fluid">
+          <div class="blog-content">
+            <h5>Tips to Maintain Your uPVC Windows</h5>
+            <p>Keep your uPVC windows durable and energy-efficient with these simple maintenance tips.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Small Blogs Grid -->
+      <div class="col-12 col-lg-6">
+        <div class="row g-4">
+          <div class="col-12 col-sm-6 d-flex" data-aos="fade-up" data-aos-delay="200">
+            <div class="blog-card small-blog w-100">
+              <img src="img/do2.jpg" alt="Blog Post" class="img-fluid">
+              <div class="blog-content">
+                <h6>Choosing the Right uPVC Doors</h6>
+                <p>Learn how to select stylish and secure uPVC doors that match your design and budget.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 d-flex" data-aos="fade-up" data-aos-delay="250">
+            <div class="blog-card small-blog w-100">
+              <img src="partitions.webp" alt="Blog Post" class="img-fluid">
+              <div class="blog-content">
+                <h6>Benefits of uPVC Partitions</h6>
+                <p>Maximize space and efficiency in your office using modern uPVC partition solutions.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 d-flex" data-aos="fade-up" data-aos-delay="300">
+            <div class="blog-card small-blog w-100">
+              <img src="img/banne3.jpeg" alt="Blog Post" class="img-fluid">
+              <div class="blog-content">
+                <h6>Installing uPVC Windows Properly</h6>
+                <p>Step-by-step guide to ensure your windows are installed efficiently and safely.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 d-flex" data-aos="fade-up" data-aos-delay="350">
+            <div class="blog-card small-blog w-100">
+              <img src="door.jpg" alt="Blog Post" class="img-fluid">
+              <div class="blog-content">
+                <h6>uPVC Door Security Tips</h6>
+                <p>Ensure maximum safety and durability for your uPVC doors with these expert tips.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+.blog-card {
+    border:1px solid #eee;
+    border-radius:10px;
+    overflow:hidden;
+    transition:0.3s;
+    background:#fff;
+    display:flex;
+    flex-direction:column;
+}
+.blog-card:hover {
+    transform: translateY(-5px);
+    box-shadow:0 10px 25px rgba(0,0,0,0.1);
+}
+.blog-card img {
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+.blog-content {
+    padding:15px;
+    text-align:left;
+    flex-grow:1;
+}
+.blog-content h5, .blog-content h6 {
+    font-weight:600;
+    margin-bottom:10px;
+    color:#174376;
+}
+.blog-content p {
+    font-size:0.9rem;
+    color:#666;
+    margin-bottom:10px;
+}
+
+/* Featured Blog */
+.featured-blog img {
+    height:100%;
+    max-height:500px;
+    border-radius:10px 10px 0 0;
+}
+
+/* Small Blogs */
+.small-blog img {
+    height:200px;
+    border-radius:10px 10px 0 0;
+}
+.small-blog .blog-content {
+    padding:10px;
+}
+
+/* Responsive Adjustments */
+@media(max-width:992px){
+  .featured-blog img {
+      max-height:400px;
+  }
+  .small-blog img {
+      height:180px;
+  }
+}
+</style>
 
 
 
