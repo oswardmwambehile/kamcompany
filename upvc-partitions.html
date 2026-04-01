@@ -217,6 +217,27 @@
         
             <a href="contact.html" class="nav-item nav-link">Contact Us</a>
             <a href="blog.html" class="nav-item nav-link">Blog</a>
+            <div class="nav-item dropdown">
+    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+          <img src="globe-removebg-preview.png" width="20" class="me-2">Change Language
+    </a>
+
+    <div class="dropdown-menu border-0 rounded-0 rounded-bottom m-0">
+
+        <!-- English -->
+        <a href="javascript:void(0)" onclick="changeLanguage('en')" class="dropdown-item d-flex align-items-center">
+            <img src="us.png" width="20" class="me-2">
+            English
+        </a>
+
+        <!-- Kiswahili -->
+        <a href="javascript:void(0)" onclick="changeLanguage('sw')" class="dropdown-item d-flex align-items-center">
+            <img src="tz.png" width="20" class="me-2">
+            Kiswahili
+        </a>
+
+    </div>
+</div>
         </div>
         
     </div>
@@ -234,7 +255,7 @@
 <div class="border p-3 p-lg-4 rounded">
 
 <!-- Large Image -->
-<img src="partitions.webp" class="img-fluid rounded mb-4 large-img">
+<img src="partionlarger.jpg" class="img-fluid rounded mb-4 large-img">
 
 <h2 style="color:#174376;font-weight:600;">UPVC Partitions</h2>
 
@@ -258,7 +279,7 @@ noise reduction, and stylish room separation without permanent construction.
 <!-- RIGHT COLUMN -->
 <div class="col-12 col-lg-4 wow fadeInRight" data-wow-delay="0.4s">
 
-<img src="part.jpeg" class="img-fluid rounded mb-4 side-img">
+<img src="sidepart.jpg" class="img-fluid rounded mb-4 side-img">
 
 <div class="p-4 shadow-sm border rounded">
 
@@ -303,12 +324,12 @@ Bagamoyo, Pwani, Tanzania
 
 <!-- Partition 1 -->
 <div class="col-12 col-md-4 col-lg-2 mb-4 text-center">
-<img src="pa1.jpg" class="img-fluid rounded shadow-sm type-img">
+<img src="o.jpg" class="img-fluid rounded shadow-sm type-img">
 </div>
 
 <!-- Partition 2 -->
 <div class="col-12 col-md-4 col-lg-2 mb-4 text-center">
-<img src="pa2.jpg" class="img-fluid rounded shadow-sm type-img">
+<img src="o1.jpg" class="img-fluid rounded shadow-sm type-img">
 </div>
 
 <!-- Partition 3 -->
@@ -318,12 +339,12 @@ Bagamoyo, Pwani, Tanzania
 
 <!-- Partition 4 -->
 <div class="col-12 col-md-4 col-lg-2 mb-4 text-center">
-<img src="pa5.webp" class="img-fluid rounded shadow-sm type-img">
+<img src="o2.jpg" class="img-fluid rounded shadow-sm type-img">
 </div>
 
 <!-- Partition 5 -->
 <div class="col-12 col-md-4 col-lg-2 mb-4 text-center">
-<img src="pa8.jpg" class="img-fluid rounded shadow-sm type-img">
+<img src="part.jpeg" class="img-fluid rounded shadow-sm type-img">
 </div>
 
 </div>
@@ -465,7 +486,30 @@ height:300px;
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+<div id="google_translate_element" style="opacity:0; position:absolute;"></div>
 
+<script>
+function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+        pageLanguage: 'en',
+        includedLanguages: 'en,sw'
+    }, 'google_translate_element');
+}
+
+function changeLanguage(lang) {
+    var interval = setInterval(function () {
+        var select = document.querySelector(".goog-te-combo");
+
+        if (select) {
+            select.value = lang;
+            select.dispatchEvent(new Event("change"));
+            clearInterval(interval);
+        }
+    }, 500);
+}
+</script>
+
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
